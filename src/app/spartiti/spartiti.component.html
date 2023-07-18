@@ -1,0 +1,23 @@
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>titolo</th>
+            <th>autore</th>
+            <th>editore</th>
+            <th class="text-end">prezzo</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr *ngFor="let a of spartiti">
+            <td>{{ a.id }}</td>
+            <td>{{ a.titolo }}</td>
+            <td>{{ a.autore }}</td>
+            <td>{{ a.editore }}</td>
+            <td class="text-end"><i>{{ a.prezzo}}</i></td>
+        </tr>
+    </tbody>
+</table>

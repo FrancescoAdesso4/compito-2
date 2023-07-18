@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>marca</th>
+            <th>modello</th>
+            <th>categoria</th>
+            <th class="text-end">prezzo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of strumenti">
+            <td>{{ a.id }}</td>
+            <td>{{ a.marca }}</td>
+            <td>{{ a.modello }}</td>
+            <td>{{ a.categoria }}</td>
+            <td class="text-end"><i>{{ a.prezzo}}</i></td>
+        </tr>
+    </tbody>
+</table>
